@@ -1,0 +1,88 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
+.main div{
+  box-sizing: border-box;
+}
+ h3{
+  color: blue;
+  text-align: center;
+}
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6,
+.row7,
+.row8,
+.row9{
+  width: 100%;
+  border: 1px solid #ddf;
+  border-radius: 10px;
+}
+@media (min-width:600px) {
+  .main{
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .row1,.row9{
+    width: 100%;
+    box-shadow: 1px 3px 3px 3px #ddf;
+    padding: 1%;
+  }
+  .row2,
+  .row3,
+  .row4,
+  .row5{
+    width: 50%;
+    box-shadow: 1px 3px 3px 3px #ddf;
+    padding: 1%;
+  }
+  .row6,
+  .row7,
+  .row8{
+    width: 33.3%;
+    box-shadow: 1px 3px 3px 3px #ddf;
+    padding: 1%;
+  }
+}
+@media (min-width:800px) {
+  .row1{
+    width: 65%;
+    box-shadow: 1px 3px 3px 3px #ddf;
+    padding: 1%;
+  }
+  .row2{
+    width: 35%;
+    box-shadow: 1px 3px 3px 3px #ddf;
+    padding: 1%;
+  }
+  .row3,
+  .row4,
+  .row5{
+    width: 33.3%;
+    box-shadow: 1px 3px 3px 3px #ddf;
+    padding: 1%;
+  }
+  .row6,
+  .row7,
+  .row8,
+  .row9{
+    width: 50%;
+    box-shadow: 1px 3px 3px 3px #ddf;
+    padding: 1%;
+  }
+  .main{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
